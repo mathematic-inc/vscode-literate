@@ -1,0 +1,39 @@
+{
+	"compilerOptions": {
+		/* Projects */
+		"incremental": true,
+
+		/* Language and Environment */
+		"target": "ESNext",
+
+		/* Modules */
+		"module": "NodeNext",
+		"moduleResolution": "NodeNext",
+		"resolveJsonModule": true,
+
+		/* JavaScript Support */
+		"allowJs": true,
+
+		/* Emit */
+		"declaration": false,
+		"declarationMap": false,
+		"sourceMap": true,
+		"importHelpers": true,
+		"importsNotUsedAsValues": "remove",
+		"outDir": "out",
+
+		/* Interop Constraints */
+		"isolatedModules": true,
+		"esModuleInterop": true,
+		"forceConsistentCasingInFileNames": true,
+
+		/* Type Checking */
+		"strict": true,
+
+		/* Completeness */
+		"skipDefaultLibCheck": true,
+		"skipLibCheck": true
+	},
+	"include": ["src-public/**/*"],
+	"exclude": ["node_modules", ".vscode-test"]
+}

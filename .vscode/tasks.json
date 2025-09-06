@@ -1,0 +1,84 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Build Extension",
+			"type": "shell",
+			"command": "make",
+			"args": ["build"],
+			"problemMatcher": ["$tsc"],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"options": {
+				"env": {
+					"NODE_ENV": "development"
+				}
+			},
+			"presentation": {
+				"reveal": "never"
+			}
+		},
+		{
+			"label": "Watch Extension",
+			"type": "shell",
+			"command": "make",
+			"args": ["dev"],
+			"problemMatcher": {
+				"base": "$tsc-watch",
+				"background": {
+					"activeOnStart": true,
+					"beginsPattern": "Building",
+					"endsPattern": "Built in"
+				}
+			},
+			"options": {
+				"env": {
+					"NODE_ENV": "development"
+				}
+			},
+			"isBackground": true,
+			"presentation": {
+				"reveal": "never"
+			}
+		},
+		{
+			"label": "Build WASM",
+			"type": "shell",
+			"command": "make",
+			"args": ["wasm"],
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "Generate Bindings",
+			"type": "shell",
+			"command": "make",
+			"args": ["bindings"],
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "Lint All",
+			"type": "shell",
+			"command": "make",
+			"args": ["lint"],
+			"problemMatcher": ["$tsc"]
+		},
+		{
+			"label": "Format All",
+			"type": "shell",
+			"command": "make",
+			"args": ["format"],
+			"problemMatcher": []
+		},
+		{
+			"label": "Clean",
+			"type": "shell",
+			"command": "make",
+			"args": ["clean"],
+			"problemMatcher": []
+		}
+	]
+}
