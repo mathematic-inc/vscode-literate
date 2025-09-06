@@ -7,7 +7,7 @@
 		"url": "https://github.com/mathematic-inc/vscode-literate.git"
 	},
 	"description": "Generate literate documentation for your code",
-	"version": "0.4.0",
+	"version": "0.5.0",
 	"icon": "public/icon.png",
 	"engines": {
 		"vscode": "^1.88.0"
