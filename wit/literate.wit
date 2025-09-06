@@ -1,0 +1,8 @@
+package literate:extension@0.1.0;
+
+interface literate-api {
+}
+
+world literate {
+    export literate-api;
+}

@@ -1,0 +1,41 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "Run Extension",
+			"type": "extensionHost",
+			"request": "launch",
+			"args": ["--extensionDevelopmentPath=${workspaceFolder}"],
+			"outFiles": ["${workspaceFolder}/out/**/*.js"],
+			"preLaunchTask": "Build Extension",
+			"env": {
+				"NODE_ENV": "development"
+			}
+		},
+		{
+			"name": "Run Extension (Watch)",
+			"type": "extensionHost",
+			"request": "launch",
+			"args": ["--extensionDevelopmentPath=${workspaceFolder}"],
+			"outFiles": ["${workspaceFolder}/out/**/*.js"],
+			"preLaunchTask": "Watch Extension",
+			"env": {
+				"NODE_ENV": "development"
+			}
+		},
+		{
+			"name": "Extension Tests",
+			"type": "extensionHost",
+			"request": "launch",
+			"args": [
+				"--extensionDevelopmentPath=${workspaceFolder}",
+				"--extensionTestsPath=${workspaceFolder}/out/test/suite/index"
+			],
+			"outFiles": ["${workspaceFolder}/out/**/*.js"],
+			"preLaunchTask": "Build Extension",
+			"env": {
+				"NODE_ENV": "test"
+			}
+		}
+	]
+}

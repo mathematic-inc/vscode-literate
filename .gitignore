@@ -1,0 +1,9 @@
+out
+node_modules
+.vscode-test/
+*.vsix
+target
+Cargo.lock
+.DS_Store
+src-public/generated
+.rolldown
